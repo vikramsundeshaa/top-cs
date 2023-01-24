@@ -1,4 +1,51 @@
-baseURL = 'http://example.org/'
+baseURL = 'topcs.netlify.app/'
 languageCode = 'en-us'
-title = 'top-cs'
-theme = 'ananke'
+title = 'topcs'
+theme = 'papermod'
+
+
+
+
+# for Search Page
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+# Post Cover Image
+
+# working share button
+[params]
+ShowShareButtons = false
+
+
+# table of content - its working
+ShowToc = true
+TocOpen = false
+
+
+
+
+
+
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'UPSC 2023'
+  url = '/UPSC-2023'
+  weight = 20
+[[menu.main]]
+  name = 'Posts'
+  url = '/posts'
+  weight = 25  
+[[menu.main]]
+  name = 'Contact'
+  url = '/contact'
+  weight = 30
+[[menu.main]]
+  name = 'privacy policy'
+  url = '/policy'
+  weight = 40
+ 
